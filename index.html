@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>Webdash Calulator</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="styles.css">
+        <script src= "./script.js"></script>
+    </head>
+    <body> 
+        <h1>Calculator</h1>
+        <br><br><br><br>
+        <form onsubmit="getNo(); return false;" class=>
+            <div>
+                <input type = "number" class="inputs" id='num1' placeholder="1st Number">
+                <input type = "number" class="inputs" id='num2' placeholder="2nd Number">
+            </div>
+            <select name="operation" id="op" class='inputs'>
+                <option value="" disabled selected>Select an operation</option>
+                <option value="add" id="add" class='inputs'>Add</option>
+                <option value="subtract" id="sub" class='inputs'>Subtract</option>
+                <option value="multiply" id="mul" class='inputs'>Multiply</option>                
+                <option value="divide" id="divi" class='inputs'>Divide</option>
+            </select>
+            <input type = "submit" value = 'Calculate' id='cal'>
+            <p id="output"></p>
+        </form>
+    </body>
+</html>
